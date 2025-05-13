@@ -1,105 +1,78 @@
-* {
- margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
-
+/* General */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #141414;
+  color: #ffffff;
 }
-.navbar{
-  height: 60px;
-  background-color: black;
-  color: white;
+
+/* Navbar */
+nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-evenly;
+  padding: 20px 40px;
+  background-color: #141414;
+}
+.logo {
+  width: 120px;
+}
+.sign-in-btn {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
-}
-.nav-logo {
-height: 50px;
-width: 100px;
-
-
-}
-.logo{
-  background-image: url(amzon-logo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 40px;
-  width: 100%;
-  margin-top: 10px;
-
-
-}
-.border {
-  border: 1.5px solid transparent;
-
-}
-.border:hover {
-  border: 1.5px solid white
-}
-.adr1 {
-color: #cccccc;
-font-size: 0.85rem;
-margin-left: 15px;
-}
-.adr2 {
-font-size: 1rem;
-margin-left: 3px;
-font-weight: bold;
-
-}
-.add-icon {
-  display: flex;
-  align-items: center;
-}
-.navsearch {
-  display: flex;
-  justify-content: space-evenly;
- 
-width: 600px;
-height: 40px;
-border-radius: 4px;
-}
-.search-select {
-  background-color: #f3f3f3;
-  width: 50px;
+/* Hero Section */
+.hero {
+  background: url('banner.jpg') no-repeat center center/cover;
   text-align: center;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border: none;
+  padding: 80px 40px;
 }
-.search-input {
-  width: 100%;
-  font-size: 1rem;
-  border: none;
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
 }
-.search-icon {
-  width: 45px;
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.hero-btn {
+  background-color: #e50914;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Plans Section */
+.plans {
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  background-color: #febd68;
-  border-top-Right-radius: 4px;
-  border-bottom-Right-radius: 4px;
-  color: #0f1111;
+  padding: 40px;
+  gap: 20px;
 }
-.navsearch:hover {
-  border: 2px solid orange;
+.plan-box {
+  background-color: #222;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  border: 1px solid #333;
+  transition: 0.3s;
 }
-span{
-  font-size: 0.7rem;
-}
-.nav2 {
-  font-size: o.85rem;
-  font-weight: 700px;
-}
-.nav-cart i {
-  font-size: 30px;
-
-}
-.nav-cart{
-  font-size: 0.85rem;
-  font-weight: 700;
+.plan-box:hover {
+  border-color: #e50914;
 }
 
-
+/* Footer */
+footer {
+  background-color: #000;
+  color: #b3b3b3;
+  text-align: center;
+  padding: 40px;
+  font-size: 14px;
+}
